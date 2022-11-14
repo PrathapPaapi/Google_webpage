@@ -6,59 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="icon" href="images/mini_logo.png">
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css">   
 </head>
 
 
 <body>
     <header>
-        <div class="left">
-            <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
-            <a href="https://store.google.com">Store</a>
+        <div class="desktop-header">
+            <div class="desktop-left">
+                <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                <a href="https://store.google.com">Store</a>
+            </div>
+    
+            <div class="desktop-right">
+                <a href="https://mail.google.com">Gmail</a>
+                <a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a>
+                <img src="images/menu.png" class="menu-icon">  
+                <a href="https://accounts.google.com/"><button>Sign in</button></a>  
+            </div>
         </div>
-
-        <div class="right">
-            <a href="https://mail.google.com">Gmail</a>
-            <a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a>
-            <img src="images/menu.png" class="menu-icon">  
-            <a href="https://accounts.google.com/"><button>Sign in</button></a>  
+        
+        <div class="mobile-header">
+            <div class="mobile-left">
+                <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">ALL</a>
+                <a href="https://www.google.co.in/imghp?hl=en&ogbl">IMAGES</a>
+            </div>
+    
+            <div class="mobile-right">
+                <img src="images/menu.png" class="menu-icon">  
+                <a href="https://accounts.google.com/"><button>Sign in</button></a>  
+            </div>
         </div>
     </header>
-    
     
 
     <section class="section1">
         <img src="images/logo.png" class="logo">
-            <div class="s-box">
-                <img src="images/search.svg" class="search-icon">
+        <div class="s-box">
+            <img src="images/search.svg" class="search-icon">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" class="s-input" name="q" value="">
 
-                <form class="searchBox" action="https://www.google.com/search" method="get">
-                    <input type="text" class="s-input" name="q" value="">
-                </form>
+                <div>
+                    <input type="submit" class="s-btn" value="Google Search">
+                    <input type="submit" class="s-btn" value="I'm Feeling Lucky" formaction="https://www.google.com/doodles">
+                </div>   
+            </form>
                 
-                <img src="images/mic.svg" class="mic-icon">
-                <img src="images/cam.svg" class="images-icon">
-                <input type="submit" class="s-btn" value="Google Search">
-                <input type="submit" class="s-btn" value="I'm Feeling Lucky" formaction="https://www.google.com/doodles">
-            </div>
+            <img src="images/mic.svg" class="mic-icon">
+            <img src="images/cam.svg" class="images-icon">
+        </div>
+        <br><br>
     </section>
 
+    <section class="section2">
+        <div class="trending">
+            <div class="trending-bar">
+                <div><h3>Trending searches</h3></div>
+                <div><img src="images/3dots.png" class="dots-icon"></div>   
+            </div>
+            
+            <br><br>
+            <p><img src="images/trending.svg" class="trending-icon">&nbsp &nbsp &nbsp  walmart black friday deals</p>
+            <br><hr><br>
+            <p><img src="images/trending.svg" class="trending-icon">&nbsp &nbsp &nbsp  british radio host tim gough</p>
+            <br><hr><br>
+            <p><img src="images/trending.svg" class="trending-icon">&nbsp &nbsp &nbsp  adin ross nle choppa</p>
+            <br><hr><br>
+            <p><img src="images/trending.svg" class="trending-icon">&nbsp &nbsp &nbsp  erling haaland injury</p>
+            <br><hr><br>
+            <p><img src="images/trending.svg" class="trending-icon">&nbsp &nbsp &nbsp  social security benefits cola 2023</p>
+            <br><hr><br>
+        </div>
+    </section>
+    
 
     <footer>
         <h4><img src="images/carbon.png" class="carbon-icon"> Carbon neutral since 2007</h4>
-        <div class="links">
-            <div class="link1">
+        <div class="desktop-links">
+            <div class="dlink1">
                 <a href="https://ads.google.com">Advertising</a>
                 <a href="https://www.google.com/intl/en_in/business/">Business</a>
                 <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
             </div>
-            <div class="link2">
+            <div class="dlink2">
                 <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
                 <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
                 <a href="">Settings</a>
             </div>
+        </div>
 
+        <div class="mlink1">
+            <a href="">Dark theme: off</a>
+            <a href="">Settings</a>
+            <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+        </div>
+        <div class="mlink2">
+            <a href="https://ads.google.com">Advertising</a>
+            <a href="https://www.google.com/intl/en_in/business/">Business</a>
+            <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
         </div>
     </footer>
     

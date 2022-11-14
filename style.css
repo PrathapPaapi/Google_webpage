@@ -228,20 +228,20 @@ footer a:hover {
     .mobile-header {
         display: flex;
         justify-content: space-between;
-        padding: 9px 13px;
+        margin-top: 8px;
         align-items: center;
-        font-size: ;
     }
 
     .mobile-header .mobile-left {
         display: flex;
         align-items: center;
+        padding-left: 20px;
     }
     
     .mobile-header .mobile-right {
         display: flex;
         align-items: center;
-        margin-right: -80%;  
+        margin-right: -60%;  
     }
 
     .menu-icon {
@@ -276,10 +276,12 @@ footer a:hover {
     .s-box .s-input {
         border: 1px solid #989896;
         color: rgba(0, 0, 0, 0.87);
-        margin-left: 10px;
         height: 55px;
-        width: 100%;
+        margin-left: 10px;
+        width: 108%;
+        font-size: 20px;
     }
+
 
     .s-box .s-btn {
         display: none;
@@ -289,7 +291,7 @@ footer a:hover {
         width: 35px;
         position: absolute;
         top: 12px;
-        left: 20px;
+        left: 12px;
         opacity: .4;
     }
 
@@ -323,6 +325,7 @@ footer a:hover {
 
     .dots-icon {
         width: 20px;
+        margin-right: 10px;
     }
 
     .trending .trending-icon {

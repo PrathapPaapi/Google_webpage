@@ -255,7 +255,7 @@ footer a:hover {
         color: rgba(0, 0, 0, 0.87);
         margin-top: 50px;
         margin-left: 10px;
-        /* width: 90%; */
+        width: 100%;
     }
 
     .s-box .s-btn {

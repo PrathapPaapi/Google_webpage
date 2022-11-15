@@ -150,7 +150,7 @@ header a:hover {
 }
 
 .s-btn:hover {
-    border: 1px solid #000;
+    border: 1px solid rgb(86, 142, 209);
 }
 
 .trending {
@@ -187,7 +187,6 @@ footer a:hover {
 }
 
 .desktop-links {
-    border-top: 1px solid #ddd;
     display: flex;
 }
 
@@ -226,7 +225,7 @@ footer a:hover {
     .mobile-header {
         display: flex;
         justify-content: space-between;
-        margin-top: 8px;
+        margin-top: 2px;
         align-items: center;
     }
 
@@ -235,6 +234,26 @@ footer a:hover {
         align-items: center;
         padding-left: 20px;
     }
+
+    .mobile-header .mobile-left .all a {
+        color: #4285f4;
+    }
+
+    .SignIn {
+        font-size: 14px;
+        height: 38px;
+        width: 90px;
+        background-color: #2772eb;
+    }
+
+    .all {
+        margin-right: 10px;
+        text-align: center;
+        width: 40px;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: solid 2px #4285f4;
+    }
     
     .mobile-header .mobile-right {
         display: flex;
@@ -242,20 +261,25 @@ footer a:hover {
     }
 
     .section1 {
-        margin-top: -100px;
+        margin-top: -130px;
     }
 
     .logoContain{
-        width: 170px;
+        width: 180px;
         margin: 200px auto;
     }
 
+    .s-input {
+        width: 96%;
+        height: 45px;
+    }
+
     .search-icon {
-        width: 20px;
+        width: 26px;
         position: absolute;
-        top: 13px;
-        left: 14px;
-        opacity: .5;
+        top: 10px;
+        left: 17px;
+        opacity: .4;
     }
     
     .mic-icon, .s-btn, .images-icon{
@@ -267,7 +291,7 @@ footer a:hover {
     
         display: flex ;
         flex-direction: column;
-        margin: 30px 20px;
+        margin: 25px 20px;
     }
     
     .trending .trending-bar {
@@ -276,36 +300,54 @@ footer a:hover {
     }
     
     h3 {
-        font-size: larger;
+        font-size: 23px;
         font-weight: lighter;
+        opacity: .8;
     }
 
     hr {
-        opacity: .6;
+        opacity: .5;
     }
 
     .dots-icon {
         width: 20px;
-        margin-right: -20px;
+        margin-right: -10px;
     }
 
     .trending .trending-icon {
         width: 20px;
+        margin-right: 5px;
+    }
+
+    .footer-carbon {
+        display: none;
+    }
+
+    p {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 18px;
+        opacity: .7;
     }
     
-    
+    footer .grey-space {
+        border-top: 1px solid rgba(151, 150, 150, .3);
+        height: 50px;
+        width: 100%;
+    }
+
     .desktop-links {
         display: none;
     }
     
     .mlink1 a, .mlink2 a {
-        font-size: 12px;
-        color: #929497;
+        font-size: 15px;
+        color: #808285;
         font-weight: lighter;
     }
 
     .mlink1 {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid rgba(151, 150, 150, .3);
         display: flex;
         align-items: center;
         justify-content: center;

@@ -58,8 +58,7 @@ header a:hover {
     cursor: pointer;
 }
 
-
-button {
+.SignIn {
     border: 1px solid #4285f4;
     font-weight: bold;
     background: #4285f4;
@@ -74,40 +73,45 @@ button {
     flex: 1;
 }
 
-.section1 .logo {
+.logoContain{
     width: 270px;
-    display: flex;
     margin: 200px auto;
 }
 
 .s-box {
-    width: 580px;
+    max-width: 520px;
+    height: auto;
     margin: 0px auto;
     position: relative;
     margin-top: -170px;
     text-align: center;
 }
 
-.s-box .s-input {
-    display: block;
+.s-inputContain{
+    max-width: 520px;
+    height: auto;
+    margin: 0px auto;
+}
+.s-input {
+    
     border: 1px solid#ddd;
     color: rgba(0, 0, 0, 0.87);
     font-size: 16px;
-    margin-top: 25px;
     padding: 13px;
-    padding-left: 45px;
+    padding-left: 40px; 
     border-radius: 25px;
     width: 100%;
     transition: box-shadow 100ms;
     outline: none;
+    width: 100%;
 }
 
-.s-box .s-input:hover {
+.s-input:hover {
     border: 1px solid #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-.s-box .search-icon {
+.search-icon {
     width: 20px;
     position: absolute;
     top: 13px;
@@ -115,15 +119,14 @@ button {
     opacity: .5;
 }
 
-.s-box .mic-icon {
+.mic-icon {
     cursor: pointer;
     width: 24px;
     position: absolute;
     top: 11px;
     right: 55px;
 }
-
-.s-box .images-icon {
+.images-icon {
     cursor: pointer;
     width: 24px;
     position: absolute;
@@ -208,19 +211,14 @@ footer a:hover {
     display: none;
 }
 
-
-@media only screen and (min-width: 300px) and (max-width: 480px) {
-
-    body {
-        font-size: 22px;
-    }
-
+@media only screen and (max-width: 480px) {
     .desktop-header {
         display: none;
     }
 
     .mobile-header a {
-        font-size: 18px;
+        margin-left: 5px;
+        font-size: 13px;
         font-weight: 800;
         color: #61656a;
     }
@@ -241,116 +239,71 @@ footer a:hover {
     .mobile-header .mobile-right {
         display: flex;
         align-items: center;
-        margin-right: -60%;  
     }
 
-    .menu-icon {
-        width: 55px;
-        padding-left: 10px;
-        padding-right: 10px;
-        cursor: pointer;
+    .section1 {
+        margin-top: -100px;
     }
 
-    button {
-        width: 100px;
-        border: 1px solid #4285f4;
-        font-size: 18px;
-        background: #4285f4;
-        color: #fff;
-        padding: 13px 12px;
-        border-radius: 5px;
-        margin-left: 7px;
-        cursor: pointer;
+    .logoContain{
+        width: 170px;
+        margin: 200px auto;
+    }
+
+    .search-icon {
+        width: 20px;
+        position: absolute;
+        top: 13px;
+        left: 14px;
+        opacity: .5;
     }
     
-    .section1 {
-        flex: 1;
-    }
-
-    .section1 .logo {
-        width: 250px;
-        display: flex;
-        margin-left: 50%;
-    }
-
-    .s-box .s-input {
-        border: 1px solid #989896;
-        color: rgba(0, 0, 0, 0.87);
-        height: 55px;
-        margin-left: 10px;
-        width: 108%;
-        font-size: 20px;
-    }
-
-
-    .s-box .s-btn {
+    .mic-icon, .s-btn, .images-icon{
         display: none;
     }
 
-    .s-box .search-icon {
-        width: 35px;
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        opacity: .4;
-    }
-
-    .s-box .mic-icon {
-        display: none;
-    }
-
-    .s-box .images-icon {
-        display: none;
-    }
-
-    .section2 {
-        flex: 1;
-    }
-
+    
     .trending {
-        width: 155%;
-        display: block;
-        margin-left: 30px;
+    
+        display: flex ;
+        flex-direction: column;
+        margin: 30px 20px;
     }
-
+    
     .trending .trending-bar {
         display: flex;
         justify-content: space-between;
     }
-
+    
     h3 {
         font-size: larger;
         font-weight: lighter;
     }
 
+    hr {
+        opacity: .6;
+    }
+
     .dots-icon {
         width: 20px;
-        margin-right: 10px;
+        margin-right: -20px;
     }
 
     .trending .trending-icon {
         width: 20px;
     }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-
-    footer a {
-        margin-left: 20px;
-    }
-
+    
+    
     .desktop-links {
         display: none;
     }
-
+    
     .mlink1 a, .mlink2 a {
-        font-size: 18px;
+        font-size: 12px;
         color: #929497;
         font-weight: lighter;
     }
+
     .mlink1 {
         border-top: 1px solid #ddd;
         display: flex;
@@ -363,5 +316,6 @@ footer a:hover {
         align-items: center;
         justify-content: center;
     }
-    
+
+
 }

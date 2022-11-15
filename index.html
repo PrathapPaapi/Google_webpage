@@ -12,6 +12,7 @@
 
 <body>
     <header>
+
         <div class="desktop-header">
             <div class="desktop-left">
                 <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
@@ -22,43 +23,45 @@
                 <a href="https://mail.google.com">Gmail</a>
                 <a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a>
                 <img src="images/menu.png" class="menu-icon">  
-                <a href="https://accounts.google.com/"><button>Sign in</button></a>  
+                <a href="https://accounts.google.com/"><button class="SignIn">Sign in</button></a>  
             </div>
         </div>
         
         <div class="mobile-header">
             <div class="mobile-left">
-                <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">ALL</a>
+                <a href="#">ALL</a>
                 <a href="https://www.google.co.in/imghp?hl=en&ogbl">IMAGES</a>
             </div>
     
             <div class="mobile-right">
                 <img src="images/menu.png" class="menu-icon">  
-                <a href="https://accounts.google.com/"><button>Sign in</button></a>  
+                <a href="https://accounts.google.com/"><button class="SignIn">Sign in</button></a>  
             </div>
         </div>
+
     </header>
+    
     
 
     <section class="section1">
-        <img src="images/logo.png" class="logo">
-        
+        <div class="logoContain">
+            <img src="images/logo.png" width="100%">
+        </div>
         <div class="s-box">
-            <img src="images/search.svg" class="search-icon">
-            <form action="https://www.google.com/search" method="get">
-                <input type="text" class="s-input" name="q" value="">
-
-                <div>
+            <img src="images/search.svg" class="search-icon" width="100%">
+            <form class="searchBox" action="https://www.google.com/search" method="get">
+               <div class="s-inputContain"> <input type="text" class="s-input" name="q" value="" ></div>
+                <div class="test2">
                     <input type="submit" class="s-btn" value="Google Search">
                     <input type="submit" class="s-btn" value="I'm Feeling Lucky" formaction="https://www.google.com/doodles">
                 </div>   
             </form>
-                
-            <img src="images/mic.svg" class="mic-icon">
-            <img src="images/cam.svg" class="images-icon">
+            
+            <img src="images/mic.svg" class="mic-icon" width="100%">
+            <img src="images/cam.svg" class="images-icon" width="100%">
         </div>
-        <br><br>
     </section>
+    <br>
 
     <section class="section2">
         <div class="trending">
@@ -67,7 +70,7 @@
                 <div><img src="images/3dots.png" class="dots-icon"></div>   
             </div>
             
-            <br><br>
+            <br>
             <p><img src="images/trending.svg" class="trending-icon">&nbsp &nbsp &nbsp  walmart black friday deals</p>
             <br><hr><br>
             <p><img src="images/trending.svg" class="trending-icon">&nbsp &nbsp &nbsp  british radio host tim gough</p>
@@ -80,10 +83,11 @@
             <br><hr><br>
         </div>
     </section>
-    
+
 
     <footer>
         <h4><img src="images/carbon.png" class="carbon-icon"> Carbon neutral since 2007</h4>
+
         <div class="desktop-links">
             <div class="dlink1">
                 <a href="https://ads.google.com">Advertising</a>
@@ -108,6 +112,7 @@
             <a href="https://www.google.com/intl/en_in/business/">Business</a>
             <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
         </div>
+
     </footer>
     
 </body>

@@ -225,7 +225,6 @@ footer a:hover {
     .mobile-header {
         display: flex;
         justify-content: space-between;
-        margin-top: 2px;
         align-items: center;
     }
 
@@ -240,7 +239,8 @@ footer a:hover {
     }
 
     .SignIn {
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 300;
         height: 38px;
         width: 90px;
         background-color: #2772eb;
@@ -251,7 +251,7 @@ footer a:hover {
         text-align: center;
         width: 40px;
         height: 50px;
-        line-height: 50px;
+        line-height: 48px;
         border-bottom: solid 2px #4285f4;
     }
     
@@ -288,10 +288,9 @@ footer a:hover {
 
     
     .trending {
-    
         display: flex ;
         flex-direction: column;
-        margin: 25px 20px;
+        margin: 29px 20px;
     }
     
     .trending .trending-bar {
@@ -300,12 +299,22 @@ footer a:hover {
     }
     
     h3 {
-        font-size: 23px;
+        font-size: 22px;
         font-weight: lighter;
         opacity: .8;
     }
 
+    .trending-row {
+        display: flex;
+    }
+
+    .trending-bar h3 {
+        margin-left: 4px ;
+    }
+
     hr {
+        margin-left: -2px;
+        margin-right: -2px;
         opacity: .5;
     }
 
@@ -315,8 +324,10 @@ footer a:hover {
     }
 
     .trending .trending-icon {
-        width: 20px;
-        margin-right: 5px;
+        width: 22px;
+        margin-right: 3px;
+        margin-left: 12px;
+        opacity: 0.8;
     }
 
     .footer-carbon {
@@ -325,9 +336,9 @@ footer a:hover {
 
     p {
         font-size: 18px;
-        margin-top: 15px;
+        margin-top: 17px;
         margin-bottom: 18px;
-        opacity: .7;
+        opacity: .8;
     }
     
     footer .grey-space {
@@ -343,10 +354,11 @@ footer a:hover {
     .mlink1 a, .mlink2 a {
         font-size: 15px;
         color: #808285;
-        font-weight: lighter;
+        font-weight: 100;
     }
 
     .mlink1 {
+        padding-top: 10px;
         border-top: 1px solid rgba(151, 150, 150, .3);
         display: flex;
         align-items: center;

@@ -31,13 +31,7 @@ header a:hover {
     text-decoration: underline;
 }
 
-.desktop-header .desktop-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.desktop-header .desktop-right {
+.desktop-header .links {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +52,7 @@ header a:hover {
     cursor: pointer;
 }
 
-.SignIn {
+.sign-in{
     border: 1px solid #4285f4;
     font-weight: bold;
     background: #4285f4;
@@ -69,11 +63,16 @@ header a:hover {
     cursor: pointer;
 }
 
-.section1 {
+.google-section {
     flex: 1;
 }
 
-.logoContain{
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.google-logo{
     width: 270px;
     margin: 200px auto;
 }
@@ -119,20 +118,21 @@ header a:hover {
     opacity: .5;
 }
 
-.mic-icon {
+.search-box-icons {
     cursor: pointer;
     width: 24px;
     position: absolute;
     top: 11px;
+}
+
+.mic-icon {
     right: 55px;
 }
+
 .images-icon {
-    cursor: pointer;
-    width: 24px;
-    position: absolute;
-    top: 11px;
     right: 15px;
 }
+
 
 .s-btn {
     border: 1px solid transparent;
@@ -188,17 +188,12 @@ footer a:hover {
 
 .desktop-links {
     display: flex;
+    justify-content: space-around;
 }
 
-.dlink1 {
+.dlink {
     text-align: center;
     padding-right: 20px;
-    flex: 1;
-}
-
-.dlink2 {
-    text-align: center;
-    padding-left: 20px;
     flex: 1;
 }
 
@@ -238,7 +233,7 @@ footer a:hover {
         color: #4285f4;
     }
 
-    .SignIn {
+    .sign-in {
         font-size: 16px;
         font-weight: 300;
         height: 38px;
@@ -260,11 +255,11 @@ footer a:hover {
         align-items: center;
     }
 
-    .section1 {
+    .google-section {
         margin-top: -130px;
     }
 
-    .logoContain{
+    .google-logo{
         width: 180px;
         margin: 200px auto;
     }
@@ -291,6 +286,7 @@ footer a:hover {
         display: flex ;
         flex-direction: column;
         margin: 29px 20px;
+        margin-bottom: 100px;
     }
     
     .trending .trending-bar {
